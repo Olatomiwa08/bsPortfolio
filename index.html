@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="assets/all.min.css">
     <link rel="stylesheet" href="index.css" >
     <style>
-        img{
-            max-width: 100%;
+        body{
+           
+            font-family:var(--fa-style-family,"Font Awesome 6 Free");
+            font-weight:var(--fa-style,900)
         }
     </style>
 </head>
-<body class="bg-dark">
+<body class="bg-black">
     <div class="container-fluid ">
               <nav class="navbar container navbar-dark bg-dark fixed-top">
                 <div class="container-fluid">
@@ -52,29 +54,106 @@
     
     <!-- Home section -->
     <section class="home">
-        <div class="container-lg">
-            <div class="row">
-                <div class="col">
-                    <img src="/assets/" alt="" srcset="">
+        <div class="container align-content-center align-items-center">
+            <div class="row align-content-center align-items-center min-vh-100 ">
+                <div class="col-md-6">
+                    <div class="home-image">
+                        <img src="/assets/profile.avif" class=" rounded-circle " alt="" >
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-first">
+                    <div class="home-text  text-danger ">
+                         <h4 class="pb-3">Hello</h3>
+                         <h1 class="pb-4 bg-transparent" >I'm Tomiwa daniel</h1>
+                         <h2 class="text-white pb-3">Front-End Developer</h2>
+                         <a href="#" class="btn btn-danger">Hire Me</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- <div class="container-fluid bg-secondary text-md-center py-5" >
-        <h1>My First Bootstrap Page</h1>
-        <p>This part is inside a .container class.</p>
-        <p>The .container class provides a responsive fixed width container.</p>
-    </div>
-    <div class="gallery">
-        <div class="row-cols-sm-1 row-cols-md-2">
-            <div class=""><img src="assets/jane.jpg" alt=""></div>
-        <div class=""><img src="assets/cynthia.jpg.crdownload" alt=""></div>
-        <div class=""><img src="assets/mary.jpg" alt=""></div>
-        <div class=""><img src="assets/sam.jpg" alt=""></div>
+    <section class="about">
+        <div class="container">
+            <div class="row align-content-center align-items-center min-vh-100 ">
+                <div class="col-md-6">
+                    <div class="about-image">
+                        <img src="/assets/me.jpg" class="w-100  img-flud shadow p-2 mb-5 bg-gradient rounded" alt="" >
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="about-text   ">
+                         <h1 class="pb-3 bg-transparent text-center text-danger-emphasis fw-bold" >About Me</h1>
+                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates quas aperiam corrupti harum accusamus dolorem modi consequuntur cupiditate quod neque facere optio, adipisci nobis assumenda perferendis similique aliquid non doloremque? Quibusdam hic eius deserunt pariatur eum similique rerum. Sunt, consectetur!</p>
+                         <div class="about-list text-white">
+                            <div class="row">
+                                <div class="col ">
+                                        <p class="col-3">1. Problem Solving</p>
+                                        <p class="col-6">2. Creative Ideas</p>
+                                        <p class="col-6">3. Search Alot</p>
+                                        <p class="col-6">4. Neat Design</p>
+                            </div>
+                         </div>
+                         <a href="#" class="btn btn-danger">Contact Me</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div> -->
+    </section>
+    
+    <section class="service mb-5">
+      <div class="container justify-content-center align-content-center align-items-center">
+        <div class=" d-md-flex">
+            <div class="col-md-4   bg-dark text-light p-5 me-2">
+                <img src="assets/download (1).png" style="width: 50px;"  alt="">
+                <div class="sesrvice-text">
+                  <h3>Mobile app</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident saepe nobis voluptates tempora?</p>
+                </div>      
+            </div>
+            <div class="col-md-4   bg-dark text-light p-5 me-2 ">
+                <img src="assets/download (2).png" style="width: 50px;" alt="">
+                <div class="sesrvice-text">
+                  <h3>Web Development</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident saepe nobis voluptates tempora?</p>
+                </div>
+            </div>
+            <div class="col-md-4   bg-dark text-light p-5 me-1 ">
+                <img src="assets/download (3).png" style="width: 50px;" alt="">
+                <div class="sesrvice-text">
+                  <h3>Graphics</h3>
+                  <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident saepe nobis voluptates tempora?</p>
+                
+                </div>
+            </div>
+          </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- foot -->
+    <footer class="container">
+        <form class="">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label ">Email address</label>
+                        <input type="email" class="form-control bg-transparent " id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3">
+                        
+                        <label for="exampleInputPassword1" class="form-label">Message</label>
+                        <textarea class="form-control" cols="1" rows="5"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-danger">Submit</button>
+                      
+                </div>
+            </div>
+        </form>
+    </footer>2
     <script src="/assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
