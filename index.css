@@ -134,6 +134,14 @@ section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    background: url(assets/bghome.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-text{
+    margin-left: 40px;
+    position: relative;
+    right: 0;
 }
 .home-text h1{
     margin: 20px 0;
@@ -168,8 +176,7 @@ section {
     border: 1px solid var(--main-color);
 }
 #home img{
-    border-radius: 50%;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 .text{
     color: white;
@@ -182,6 +189,9 @@ section {
     gap: 2rem;
     position: relative;
     width: 100%;
+    background: url(assets/pexels-pixabay-531880.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about-text h4{
@@ -237,6 +247,9 @@ section {
 }
 .service{
     position: relative;
+    background: url(assets/port1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .box{
     padding: 45px;
@@ -343,11 +356,14 @@ section {
     }
 } */
 
+    
 .contact{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 3rem;
+    background: url(assets/footeer.jpg) ;
+    /* backdrop-filter: blur(20px); */
 }
 .contact-text h4{
     margin: 15px 0;
@@ -443,10 +459,14 @@ form textarea{
         position: relative;
         top: 200px;
     }
+    .home img{
+        order: 1;
+    }
   #about{
         /* grid-template-columns: repeat(auto-fit, minmax(350px, auto));
          */
-         display: block;
+         display: flex;
+         flex-direction: column-reverse;
     }
     .service{
         position: relative;
